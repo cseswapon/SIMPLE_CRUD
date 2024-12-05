@@ -1,6 +1,6 @@
 <?php
 	require_once("dbConnection.php");
-	$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
+	$result = mysqli_query($mysqli, "SELECT * FROM users Where isDelete=0 ORDER BY id DESC");
 ?>
 <html>
 	<head>	
